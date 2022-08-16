@@ -1,0 +1,36 @@
+button {
+    margin-top: 10px;
+}
+.center {
+    text-align: center;
+    font-family: arial, sans-serif;
+}
+h2,h4{
+    margin: 0.5px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+    text-align: center;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    font-family: 'Ubuntu', sans-serif;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+.container {
+    padding: 30px;
+    width: fit-content;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(105, 105, 105);
+    border-radius: 3px;
+    padding-bottom: 6px;
+    margin: auto;
+}

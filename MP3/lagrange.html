@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lagrange</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div class="center">
+            <br>
+            <h2>Lagrange Interpolation</h2>
+            <h4><i>Group 1</i></h4><br>
+            
+            <button onclick="myFunction()" id="bt">User-defined</button>
+            <button onclick="myFunction1()" id="bt1">Programmer-defined</button><br><br>
+
+            <!--User Defined-->
+            <div id="DIV_ud" style="display: none;">
+                <div class="container">
+                    <p style="margin: 0.5px;">Enter Points (x,y):</p>
+                    ( <input type="text" placeholder="x" id="value_x" size="5"> ,
+                    <input type="text" placeholder="y" id="value_y" size="5"> )<br>
+                    <button onclick="add()">Add</button><br><br>
+    
+                    <p style="margin: 0.5px">Enter value f(x):</p>
+                    <input type="text" placeholder="x" id="value_for_x">
+    
+                    <br>
+                    <button onclick="solve()">Solve</button>
+                    <button onclick="clear_all()">Clear</button>
+    
+                    <p><b>Points:</b></p>
+                    <p id="points"></p>
+    
+                    <p><b>Answer:</b></p>
+                    <!--For value testing visualization-->
+                    <!--<p id="answer1"></p>
+                    <p id="answer2"></p>-->
+                    <p id="answer"></p>
+                </div>    
+            </div>
+
+            <!--Programmer Defined-->
+            <div id="DIV_pd" style="display:none;">
+                <div class="container">
+                    <p style="margin: 0.5px;"><b>USD to PHP Exchange Rate</b></p>
+                    <p style="margin: 00.5px;"><i>(Apr.01.22 - May.13.22)</i></p>
+                    <p style="display: inline;">Link: </p><a href="https://tradingeconomics.com/philippines/currency" target="_blank">tradingeconomics.com</a>
+                    <br><br><hr><br>
+
+                    <p style="margin: 0.5px">Enter value f(x):</p>
+                    <input type="text" placeholder="x" id="value_for_x_pd">
+    
+                    <br>
+                    <button onclick="solve1()">Solve</button>
+                    <button onclick="clear_all1()">Clear</button>
+    
+                    <p><b>Answer:</b></p>
+                    <!--For value testing visualization-->
+                    <!--<p id="answer1"></p>-->
+                    <p id="answer2"></p>
+                    <p id="answer_pd"></p>
+                </div>    
+            </div>
+        </div>
+
+        <script src="control.js" async defer></script>
+    </body>
+</html>
